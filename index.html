@@ -1,0 +1,859 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Project Countdown Page</title>
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+
+  <body>
+    <!------------------------------ This is the background video fullscreen ------------------------------->
+    <video
+      class="background-video"
+      src="videos/4K Planet Earth Spinning in Space - Free HD Videos - No Copyright.mp4"
+      autoplay
+      muted
+      loop
+    ></video>
+    <!----------------------------------- End of the background video ------------------------------------------->
+
+    <!------------------------------------ Content Section (P1 & H1) ----------------------------------------------->
+    <div id="content">
+      <h1 class="header1">WEBSITE IS ALMOST READY</h1>
+      <p>
+        Our website is under construction. We'll be here soon with our new
+        awesome tech.<br />
+        Subscribe to be notified.
+      </p>
+    </div>
+    <!-------------------------------------- End of Content Section (P1 & H1) ----------------------------------------------->
+
+    <!-------------------------------------------- Countdown HTML Section -------------------------------------------------->
+    <div id="countdown">
+      <div><span id="days"></span> Days</div>
+      <div><span id="hours"></span> Hours</div>
+      <div><span id="minutes"></span> Minutes</div>
+      <div><span id="seconds"></span> Seconds</div>
+    </div>
+    <!--------------------------------------- End of Countdown HTML Section -------------------------------------------------->
+
+    <!--------------------------------------- 3 x Buttons Section --------------------------------------------->
+    <div class="buttons-container">
+      <button onclick="location.reload();" class="shadow__btn">HOME</button>
+      <button id="myBtn" class="shadow__btn" onclick="openModal()">SUBSCRIBE NOW</button>
+      <button id="myBtn2" class="shadow__btn" onclick="">CONTACT US</button>
+    </div>
+    <!---------------------------------------End of 3 x Buttons Section --------------------------------------------->
+
+    <!----------------------------------------Start of Modal 1 ------------------------------------------------------------->
+
+    <div id="myModal" class="modal">
+      <div class="modal-content">
+        <span class="close">&times;</span>
+        <div id="mc_embed_signup">
+          <!-----------------------------------Start of Mailchimp form start -->
+          <form
+            action="https://gmail.us14.list-manage.com/subscribe/post?u=6fae1fac1e015a80cdf3fc28e&amp;id=0b227e89d8&amp;f_id=0056afe0f0"
+            method="post"
+            id="mc-embedded-subscribe-form"
+            name="mc-embedded-subscribe-form"
+            class="validate"
+            target="_blank"
+            id="contactForm"
+          >
+            <div id="mc_embed_signup_scroll">
+              <h2>Subscribe:</h2>
+              <div class="indicates-required">
+                <span class="asterisk">*</span> indicates required
+              </div>
+              <div class="mc-field-group">
+                <label for="mce-EMAIL"
+                  >Email: <span class="asterisk">*</span></label
+                ><input
+                  type="email"
+                  name="EMAIL"
+                  class="required email"
+                  id="mce-EMAIL"
+                  autocomplete="email"
+                  required
+                />
+              </div>
+              <div class="mc-field-group">
+                <label for="mce-FNAME"
+                  >Ονομα: <span class="asterisk">*</span></label
+                ><input
+                  type="text"
+                  name="FNAME"
+                  class="required text"
+                  id="mce-FNAME"
+                  value=""
+                  required
+                />
+              </div>
+              <div class="mc-field-group">
+                <label for="mce-LNAME"
+                  >Επίθετο: <span class="asterisk">*</span></label
+                ><input
+                  type="text"
+                  name="LNAME"
+                  class="required text"
+                  id="mce-LNAME"
+                  value=""
+                  required
+                />
+              </div>
+              <div class="mc-address-group">
+                <div class="mc-field-group">
+                  <label for="mce-ADDRESS-addr1">Διεύθυνση: </label
+                  ><input
+                    type="text"
+                    maxlength="70"
+                    name="ADDRESS[addr1]"
+                    id="mce-ADDRESS-addr1"
+                    value=""
+                  />
+                </div>
+                <div class="mc-field-group">
+                  <label for="mce-ADDRESS-addr2">Διεύθυνση 2:</label
+                  ><input
+                    type="text"
+                    maxlength="70"
+                    name="ADDRESS[addr2]"
+                    id="mce-ADDRESS-addr2"
+                    value=""
+                  />
+                </div>
+                <div class="mc-address-fields-group">
+                  <div class="mc-field-group">
+                    <label for="mce-ADDRESS-city">Πόλη:</label
+                    ><input
+                      type="text"
+                      maxlength="40"
+                      name="ADDRESS[city]"
+                      id="mce-ADDRESS-city"
+                      value=""
+                    />
+                  </div>
+                  <div class="mc-field-group">
+                    <label for="mce-ADDRESS-state"
+                      >Πολιτεία/Επαρχία/Περιοχή:</label
+                    ><input
+                      type="text"
+                      maxlength="20"
+                      name="ADDRESS[state]"
+                      id="mce-ADDRESS-state"
+                      value=""
+                    />
+                  </div>
+                  <div class="mc-field-group">
+                    <label for="mce-ADDRESS-zip">Ταχυδρομικός Κώδικας:</label
+                    ><input
+                      type="text"
+                      maxlength="10"
+                      name="ADDRESS[zip]"
+                      id="mce-ADDRESS-zip"
+                      value=""
+                    />
+                  </div>
+                </div>
+                <div class="mc-field-group">
+                  <label for="mce-ADDRESS-country">Χώρα:</label
+                  ><select name="ADDRESS[country]" id="mce-ADDRESS-country">
+                    <option value="Albania">Albania</option>
+                    <option value="Algeria">Algeria</option>
+                    <option value="Andorra">Andorra</option>
+                    <option value="Angola">Angola</option>
+                    <option value="Argentina">Argentina</option>
+                    <option value="Armenia">Armenia</option>
+                    <option value="Australia">Australia</option>
+                    <option value="Austria">Austria</option>
+                    <option value="Azerbaijan">Azerbaijan</option>
+                    <option value="Bahamas">Bahamas</option>
+                    <option value="Bahrain">Bahrain</option>
+                    <option value="Bangladesh">Bangladesh</option>
+                    <option value="Barbados">Barbados</option>
+                    <option value="Belarus">Belarus</option>
+                    <option value="Belgium">Belgium</option>
+                    <option value="Belize">Belize</option>
+                    <option value="Benin">Benin</option>
+                    <option value="Bermuda">Bermuda</option>
+                    <option value="Bhutan">Bhutan</option>
+                    <option value="Bolivia">Bolivia</option>
+                    <option value="Bosnia and Herzegovina">
+                      Bosnia and Herzegovina
+                    </option>
+                    <option value="Botswana">Botswana</option>
+                    <option value="Brazil">Brazil</option>
+                    <option value="Bulgaria">Bulgaria</option>
+                    <option value="Burkina Faso">Burkina Faso</option>
+                    <option value="Burundi">Burundi</option>
+                    <option value="Cambodia">Cambodia</option>
+                    <option value="Cameroon">Cameroon</option>
+                    <option value="Canada">Canada</option>
+                    <option value="Cape Verde">Cape Verde</option>
+                    <option value="Cayman Islands">Cayman Islands</option>
+                    <option value="Central African Republic">
+                      Central African Republic
+                    </option>
+                    <option value="Chad">Chad</option>
+                    <option value="Chile">Chile</option>
+                    <option value="China">China</option>
+                    <option value="Colombia">Colombia</option>
+                    <option value="Congo">Congo</option>
+                    <option value="Croatia">Croatia</option>
+                    <option value="Cyprus">Cyprus</option>
+                    <option value="Czech Republic">Czech Republic</option>
+                    <option value="Denmark">Denmark</option>
+                    <option value="Djibouti">Djibouti</option>
+                    <option value="Ecuador">Ecuador</option>
+                    <option value="Egypt">Egypt</option>
+                    <option value="El Salvador">El Salvador</option>
+                    <option value="Equatorial Guinea">Equatorial Guinea</option>
+                    <option value="Eritrea">Eritrea</option>
+                    <option value="Estonia">Estonia</option>
+                    <option value="Ethiopia">Ethiopia</option>
+                    <option value="Fiji">Fiji</option>
+                    <option value="Finland">Finland</option>
+                    <option value="France">France</option>
+                    <option value="Gabon">Gabon</option>
+                    <option value="Gambia">Gambia</option>
+                    <option value="Georgia">Georgia</option>
+                    <option value="Germany">Germany</option>
+                    <option value="Ghana">Ghana</option>
+                    <option value="Greece" selected="">Greece</option>
+                    <option value="Guam">Guam</option>
+                    <option value="Guinea">Guinea</option>
+                    <option value="Guinea-Bissau">Guinea-Bissau</option>
+                    <option value="Guyana">Guyana</option>
+                    <option value="Honduras">Honduras</option>
+                    <option value="Hong Kong">Hong Kong</option>
+                    <option value="Hungary">Hungary</option>
+                    <option value="Iceland">Iceland</option>
+                    <option value="India">India</option>
+                    <option value="Indonesia">Indonesia</option>
+                    <option value="Ireland">Ireland</option>
+                    <option value="Israel">Israel</option>
+                    <option value="Italy">Italy</option>
+                    <option value="Japan">Japan</option>
+                    <option value="Jordan">Jordan</option>
+                    <option value="Kazakhstan">Kazakhstan</option>
+                    <option value="Kenya">Kenya</option>
+                    <option value="Kuwait">Kuwait</option>
+                    <option value="Kyrgyzstan">Kyrgyzstan</option>
+                    <option value="Lao People's Democratic Republic">
+                      Lao People's Democratic Republic
+                    </option>
+                    <option value="Latvia">Latvia</option>
+                    <option value="Lebanon">Lebanon</option>
+                    <option value="Lesotho">Lesotho</option>
+                    <option value="Liberia">Liberia</option>
+                    <option value="Liechtenstein">Liechtenstein</option>
+                    <option value="Lithuania">Lithuania</option>
+                    <option value="Luxembourg">Luxembourg</option>
+                    <option value="Macedonia">Macedonia</option>
+                    <option value="Madagascar">Madagascar</option>
+                    <option value="Malawi">Malawi</option>
+                    <option value="Malaysia">Malaysia</option>
+                    <option value="Maldives">Maldives</option>
+                    <option value="Mali">Mali</option>
+                    <option value="Malta">Malta</option>
+                    <option value="Mauritania">Mauritania</option>
+                    <option value="Mexico">Mexico</option>
+                    <option value="Moldova, Republic of">
+                      Moldova, Republic of
+                    </option>
+                    <option value="Monaco">Monaco</option>
+                    <option value="Mongolia">Mongolia</option>
+                    <option value="Morocco">Morocco</option>
+                    <option value="Mozambique">Mozambique</option>
+                    <option value="Namibia">Namibia</option>
+                    <option value="Nepal">Nepal</option>
+                    <option value="Netherlands">Netherlands</option>
+                    <option value="Netherlands Antilles">
+                      Netherlands Antilles
+                    </option>
+                    <option value="New Zealand">New Zealand</option>
+                    <option value="Nicaragua">Nicaragua</option>
+                    <option value="Niger">Niger</option>
+                    <option value="Nigeria">Nigeria</option>
+                    <option value="Norway">Norway</option>
+                    <option value="Oman">Oman</option>
+                    <option value="Pakistan">Pakistan</option>
+                    <option value="Panama">Panama</option>
+                    <option value="Paraguay">Paraguay</option>
+                    <option value="Peru">Peru</option>
+                    <option value="Philippines">Philippines</option>
+                    <option value="Poland">Poland</option>
+                    <option value="Portugal">Portugal</option>
+                    <option value="Qatar">Qatar</option>
+                    <option value="Reunion">Reunion</option>
+                    <option value="Romania">Romania</option>
+                    <option value="Russia">Russia</option>
+                    <option value="Rwanda">Rwanda</option>
+                    <option value="Samoa (Independent)">
+                      Samoa (Independent)
+                    </option>
+                    <option value="Saudi Arabia">Saudi Arabia</option>
+                    <option value="Senegal">Senegal</option>
+                    <option value="Seychelles">Seychelles</option>
+                    <option value="Sierra Leone">Sierra Leone</option>
+                    <option value="Singapore">Singapore</option>
+                    <option value="Slovakia">Slovakia</option>
+                    <option value="Slovenia">Slovenia</option>
+                    <option value="Somalia">Somalia</option>
+                    <option value="South Africa">South Africa</option>
+                    <option value="South Korea">South Korea</option>
+                    <option value="Spain">Spain</option>
+                    <option value="Sri Lanka">Sri Lanka</option>
+                    <option value="Suriname">Suriname</option>
+                    <option value="Swaziland">Swaziland</option>
+                    <option value="Sweden">Sweden</option>
+                    <option value="Switzerland">Switzerland</option>
+                    <option value="Taiwan">Taiwan</option>
+                    <option value="Tanzania">Tanzania</option>
+                    <option value="Thailand">Thailand</option>
+                    <option value="Togo">Togo</option>
+                    <option value="Tunisia">Tunisia</option>
+                    <option value="Turkiye">Turkiye</option>
+                    <option value="Turkmenistan">Turkmenistan</option>
+                    <option value="Uganda">Uganda</option>
+                    <option value="Ukraine">Ukraine</option>
+                    <option value="United Arab Emirates">
+                      United Arab Emirates
+                    </option>
+                    <option value="Uruguay">Uruguay</option>
+                    <option value="USA">USA</option>
+                    <option value="Uzbekistan">Uzbekistan</option>
+                    <option value="Vatican City State (Holy See)">
+                      Vatican City State (Holy See)
+                    </option>
+                    <option value="Venezuela">Venezuela</option>
+                    <option value="Vietnam">Vietnam</option>
+                    <option value="Virgin Islands (British)">
+                      Virgin Islands (British)
+                    </option>
+                    <option value="Yemen">Yemen</option>
+                    <option value="Zambia">Zambia</option>
+                    <option value="Zimbabwe">Zimbabwe</option>
+                    <option value="Antigua And Barbuda">
+                      Antigua And Barbuda
+                    </option>
+                    <option value="Anguilla">Anguilla</option>
+                    <option value="American Samoa">American Samoa</option>
+                    <option value="Aruba">Aruba</option>
+                    <option value="Brunei Darussalam">Brunei Darussalam</option>
+                    <option value="Bouvet Island">Bouvet Island</option>
+                    <option value="Cook Islands">Cook Islands</option>
+                    <option value="Christmas Island">Christmas Island</option>
+                    <option value="Dominican Republic">
+                      Dominican Republic
+                    </option>
+                    <option value="Western Sahara">Western Sahara</option>
+                    <option value="Falkland Islands">Falkland Islands</option>
+                    <option value="Faroe Islands">Faroe Islands</option>
+                    <option value="Grenada">Grenada</option>
+                    <option value="French Guiana">French Guiana</option>
+                    <option value="Gibraltar">Gibraltar</option>
+                    <option value="Greenland">Greenland</option>
+                    <option value="Guadeloupe">Guadeloupe</option>
+                    <option value="Guatemala">Guatemala</option>
+                    <option value="Haiti">Haiti</option>
+                    <option value="Jamaica">Jamaica</option>
+                    <option value="Kiribati">Kiribati</option>
+                    <option value="Comoros">Comoros</option>
+                    <option value="Saint Kitts and Nevis">
+                      Saint Kitts and Nevis
+                    </option>
+                    <option value="Saint Lucia">Saint Lucia</option>
+                    <option value="Marshall Islands">Marshall Islands</option>
+                    <option value="Macau">Macau</option>
+                    <option value="Martinique">Martinique</option>
+                    <option value="Mauritius">Mauritius</option>
+                    <option value="New Caledonia">New Caledonia</option>
+                    <option value="Norfolk Island">Norfolk Island</option>
+                    <option value="Nauru">Nauru</option>
+                    <option value="Niue">Niue</option>
+                    <option value="Papua New Guinea">Papua New Guinea</option>
+                    <option value="Pitcairn">Pitcairn</option>
+                    <option value="Palau">Palau</option>
+                    <option value="Solomon Islands">Solomon Islands</option>
+                    <option value="Svalbard and Jan Mayen Islands">
+                      Svalbard and Jan Mayen Islands
+                    </option>
+                    <option value="San Marino">San Marino</option>
+                    <option value="Tonga">Tonga</option>
+                    <option value="Timor-Leste">Timor-Leste</option>
+                    <option value="Trinidad and Tobago">
+                      Trinidad and Tobago
+                    </option>
+                    <option value="Tuvalu">Tuvalu</option>
+                    <option value="Saint Vincent and the Grenadines">
+                      Saint Vincent and the Grenadines
+                    </option>
+                    <option value="Virgin Islands (U.S.)">
+                      Virgin Islands (U.S.)
+                    </option>
+                    <option value="Vanuatu">Vanuatu</option>
+                    <option value="Mayotte">Mayotte</option>
+                    <option value="Myanmar">Myanmar</option>
+                    <option value="Sao Tome and Principe">
+                      Sao Tome and Principe
+                    </option>
+                    <option value="Tajikistan">Tajikistan</option>
+                    <option value="United Kingdom">United Kingdom</option>
+                    <option value="Costa Rica">Costa Rica</option>
+                    <option value="Guernsey">Guernsey</option>
+                    <option value="North Korea">North Korea</option>
+                    <option value="Afghanistan">Afghanistan</option>
+                    <option value="Cote D'Ivoire">Cote D'Ivoire</option>
+                    <option value="Cuba">Cuba</option>
+                    <option value="French Polynesia">French Polynesia</option>
+                    <option value="Iran">Iran</option>
+                    <option value="Iraq">Iraq</option>
+                    <option value="Libya">Libya</option>
+                    <option value="Palestine">Palestine</option>
+                    <option value="Syria">Syria</option>
+                    <option value="Aaland Islands">Aaland Islands</option>
+                    <option value="Turks &amp; Caicos Islands">
+                      Turks &amp; Caicos Islands
+                    </option>
+                    <option value="Jersey  (Channel Islands)">
+                      Jersey (Channel Islands)
+                    </option>
+                    <option value="Dominica">Dominica</option>
+                    <option value="Montenegro">Montenegro</option>
+                    <option value="Sudan">Sudan</option>
+                    <option value="Montserrat">Montserrat</option>
+                    <option value="Curacao">Curacao</option>
+                    <option value="Sint Maarten">Sint Maarten</option>
+                    <option value="South Sudan">South Sudan</option>
+                    <option value="Republic of Kosovo">
+                      Republic of Kosovo
+                    </option>
+                    <option value="Congo, Democratic Republic of the">
+                      Congo, Democratic Republic of the
+                    </option>
+                    <option value="Isle of Man">Isle of Man</option>
+                    <option value="Saint Martin">Saint Martin</option>
+                    <option value="Bonaire, Saint Eustatius and Saba">
+                      Bonaire, Saint Eustatius and Saba
+                    </option>
+                    <option value="Serbia">Serbia</option>
+                  </select>
+                </div>
+              </div>
+              <div class="mc-field-group">
+                <label for="mce-PHONE">Τηλέφωνο: </label
+                ><input
+                  type="text"
+                  name="PHONE"
+                  class="REQ_CSS"
+                  id="mce-PHONE"
+                  value=""
+                  autocomplete="tel"
+                />
+              </div>
+              <div id="mce-responses" class="clear foot">
+                <div
+                  class="response"
+                  id="mce-error-response"
+                  style="display: none"
+                ></div>
+                <div
+                  class="response"
+                  id="mce-success-response"
+                  style="display: none"
+                ></div>
+              </div>
+              <div style="position: absolute; left: -5000px" aria-hidden="true">
+                /* real people should not fill this in and expect good things -
+                do not remove this or risk form bot signups */
+                <input
+                  type="submit"
+                  name="b_6fae1fac1e015a80cdf3fc28e_0b227e89d8"
+                  tabindex="-1"
+                  value="Submit"
+                />
+              </div>
+              <div class="optionalParent">
+                <div class="clear foot">
+                  <input
+                    type="submit"
+                    name="subscribe"
+                    id="mc-embedded-subscribe"
+                    class="button"
+                    value="Εγγραφή"
+                  />
+                  <p style="margin: 0px auto">
+                    <a
+                      href="http://eepurl.com/iTVn72"
+                      title="Mailchimp - email marketing made easy and fun"
+                      ><span
+                        style="
+                          display: inline-block;
+                          background-color: transparent;
+                          border-radius: 4px;
+                        "
+                        ><img
+                          class="refferal_badge"
+                          src="https://digitalasset.intuit.com/render/content/dam/intuit/mc-fe/en_us/images/intuit-mc-rewards-text-dark.svg"
+                          alt="Intuit Mailchimp"
+                          style="
+                            width: 220px;
+                            height: 40px;
+                            display: flex;
+                            padding: 2px 0px;
+                            justify-content: center;
+                            align-items: center;
+                          " /></span
+                    ></a>
+                  </p>
+                </div>
+              </div>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+    <!--------------------------------------------------------------- Mailchimp form end --------------------------------->
+    <!------------------------------------------------------------------End of modal 1-------------------------------------------->
+
+    <!---------------------------------------------------------------------- Modal 2 ---------------------------------------->
+    <div id="myModal2" class="modal2">
+      <div class="modal-content2 modal-content-2">
+        <span class="close">&times;</span>
+        <div class="contactus2-form2">
+          <form id="contactForm">
+            <h2 id="header-modal-2">Contact Us:</h2>
+            <div class="modalsecond2">
+              <!-------------------------------------------------------- Start of Contact Form -------------------------------------------------->
+              <div class="mb-3 A1 required">
+                <label for="Name" id="name-second-modal" class="form-label"
+                  ><strong>ΟΝΟΜΑ:</strong></label
+                >
+                <input
+                  type="text"
+                  class="form-input"
+                  id="input-name-1"
+                  pattern="[a-zA-Zα-ωΑ-Ω ]+"
+                  required
+                />
+                <div class="error-message" id="name-error"></div>
+              </div>
+              <div class="mb-3 A2 required">
+                <label
+                  for="Surname"
+                  id="Surname-second-modal"
+                  class="form-label"
+                  ><strong>ΕΠΩΝΥΜΟ:</strong></label
+                >
+                <input
+                  type="text"
+                  class="form-input"
+                  id="input-name-2"
+                  pattern="[a-zA-Zα-ωΑ-Ω ]+"
+                  required
+                />
+                <div class="error-message" id="surname-error"></div>
+              </div>
+              <div class="mb-3 A3">
+                <label for="Street" id="address-second-modal" class="form-label"
+                  ><strong>ΟΔΟΣ:</strong></label
+                >
+                <input
+                  type="text"
+                  class="form-input"
+                  id="input-name-3"
+                  pattern="[a-zA-Zα-ωΑ-Ω ]+"
+                />
+                <div class="error-message" id="street-error"></div>
+              </div>
+              <div class="mc-field-group">
+                <label for="input-name-4">ΑΡΙΘΜΟΣ ΟΔΟΥ:</label>
+                <input
+                  type="text"
+                  id="input-name-4"
+                  name="number"
+                  class="required text"
+                  value=""
+                />
+                <span id="number-error" class="error-message"></span>
+              </div>
+              <div class="mb-3 A5 Required">
+                <label for="City" id="town-second-modal" class="form-label"
+                  ><strong>ΠΟΛΗ:</strong></label
+                >
+                <input
+                  type="text"
+                  class="form-input"
+                  id="input-name-5"
+                  required
+                />
+                <div class="error-message" id="city-error"></div>
+              </div>
+              <div class="mb-3 A6">
+                <label for="Region" id="area-second-modal" class="form-label"
+                  ><strong>ΠΕΡΙΟΧΗ:</strong></label
+                >
+                <input type="text" class="form-input" id="input-name-6" />
+                <div class="error-message" id="region-error"></div>
+              </div>
+              <div class="mb-3 A7">
+                <label
+                  for="FamilyStatus"
+                  id="family-condition-second-modal"
+                  class="form-label"
+                  ><strong>ΟΙΚ.ΚΑΤΑΣΤΑΣΗ:</strong></label
+                >
+                <select
+                  id="family-form"
+                  name="family-condition"
+                  class="form-control"
+                >
+                  <option>Επιλέξτε</option>
+                  <option>ΕΓΓΑΜΟΣ/Η</option>
+                  <option>ΑΓΑΜΟΣ/Η</option>
+                  <option>ΕΝ ΔΙΑΣΤΑΣΕΙ</option>
+                  <option>ΔΙΑΖΕΥΓΜΕΝΟΣ/Η</option>
+                </select>
+                <div class="error-message" id="family-status-error"></div>
+              </div>
+              <div class="mb-3 A8">
+                <label for="Children" id="kids-second-modal" class="form-label"
+                  ><strong>ΤΕΚΝΑ:</strong></label
+                >
+                <input
+                  type="checkbox"
+                  class="kids-input"
+                  id="input-kids-input"
+                />
+              </div>
+              <div class="mb-3 A9">
+                <label
+                  for="NumberOfChildren"
+                  id="number-of-kids-second-modal"
+                  class="form-label"
+                  ><strong>ΑΡΙΘΜΟΣ ΤΕΚΝΩΝ:</strong></label
+                >
+                <input type="text" class="form-input" id="input-name-7" />
+                <div class="error-message" id="number-of-kids-error"></div>
+              </div>
+              <div class="mb-3 A10">
+                <label
+                  for="Birthdate"
+                  id="bornDate-second-modal"
+                  class="label-date"
+                  ><strong>ΧΡΟΝ.ΓΕΝΝΗΣΗΣ:</strong></label
+                >
+                <input type="date" class="date-input" id="birthdate" />
+                <div class="error-message" id="birthdate-error"></div>
+              </div>
+              <div class="mb-3 A11">
+                <label for="Gender" id="gender-second-modal" class="form-label">
+                  <strong>ΦΥΛΟ:</strong>
+                </label>
+                <select id="gender-form" name="gender">
+                  <option>Επιλέξτε</option>
+                  <option>ΑΝΔΡΑΣ</option>
+                  <option>ΓΥΝΑΙΚΑ</option>
+                  <option>ΑΛΛΟ</option>
+                </select>
+                <div class="error-message" id="gender-error"></div>
+              </div>
+              <div class="mb-3 A12">
+                <label
+                  for="MilitaryStatus"
+                  id="militaryCondition-second-modal"
+                  class="form-label"
+                >
+                  <strong>ΣΤΡ.ΥΠΟΧΡΕΩΣΕΙΣ:</strong>
+                </label>
+                <select id="military-condition" name="military-condition">
+                  <option>Επιλέξτε</option>
+                  <option>ΝΑΙ</option>
+                  <option>ΟΧΙ</option>
+                </select>
+                <div class="error-message" id="military-condition-error"></div>
+              </div>
+              <div class="mb-3 A13">
+                <label
+                  for="DischargeYear"
+                  id="militaryReleaseDate-second-modal"
+                  class="label-date"
+                >
+                  <strong>ΕΤΟΣ ΑΠΟΛ.ΣΤΡΑΤΟΥ:</strong>
+                </label>
+                <input type="date" class="date-input" id="discharge-year" />
+                <div class="error-message" id="discharge-year-error"></div>
+              </div>
+
+              <div class="mb-3 A8">
+                <label
+                  for="CreditCards"
+                  id="creditCards-second-modal"
+                  class="form-label"
+                  ><strong>ΠΙΣΤΩΤΙΚΕΣ ΚΑΡΤΕΣ:</strong></label
+                >
+                <input type="checkbox" class="Credit-Cards" id="cards" />
+              </div>
+              <div class="mb-3 A8">
+                <label for="Loan" id="loan-second-modal" class="loan-bank"
+                  ><strong>ΔΑΝΕΙΟ:</strong></label
+                >
+                <input type="checkbox" class="loan-bank" id="bank-loan" />
+              </div>
+              <div class="mb-3 A16">
+                <label
+                  for="Education"
+                  id="graduate-second-modal"
+                  class="form-label"
+                  ><strong>ΑΠΟΦΟΙΤΟΣ:</strong></label
+                >
+                <select
+                  id="education-form"
+                  name="education"
+                  class="form-control"
+                >
+                  <option>Επιλέξτε</option>
+                  <option>ΑΕΙ</option>
+                  <option>ΤΕΙ</option>
+                  <option>ΤΕΛ</option>
+                  <option>Λύκειο</option>
+                  <option>Γυμνάσιο</option>
+                </select>
+                <div class="error-message" id="education-error"></div>
+              </div>
+
+              <div class="sendform-button">
+                <input
+                  type="submit"
+                  name="subscribe"
+                  id="send-button-modal-2"
+                  class="button"
+                  value="Αποστολή"
+                />
+              </div>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+    <div id="successModal" class="modal2" style="display: none">
+      <div class="modal-content2 modal-content-2">
+        <span class="close-success">&times;</span>
+        <div class="success-message">
+          <h2>Η φόρμα σας έχει υποβληθεί επιτυχώς!</h2>
+        </div>
+      </div>
+    </div>
+    <!----------------------------------------------------------- End of Modal 2 ------------------------------------------------->
+    <!---------------------------------------------------------End of Contact form---------------------------------------->
+
+    <!-------------------------------------------------------- Start of Social Media buttons ------------------------------------------->
+    <div class="container">
+      <div class="main__socials">
+        <button
+          class="Link__instagram"
+          onclick="window.open('https://www.instagram.com/0devmak0/', '_blank')"
+        >
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            xmlns:xlink="http://www.w3.org/1999/xlink"
+            viewBox="0,0,256,256"
+            width="30px"
+            height="30px"
+            fill-rule="nonzero"
+            class="instagram"
+          >
+            <g
+              fill-rule="nonzero"
+              stroke="none"
+              stroke-width="1"
+              stroke-linecap="butt"
+              stroke-linejoin="miter"
+              stroke-miterlimit="10"
+              stroke-dasharray=""
+              stroke-dashoffset="0"
+              font-family="none"
+              font-weight="none"
+              font-size="none"
+              text-anchor="none"
+              style="mix-blend-mode: normal"
+            >
+              <g transform="scale(8,8)">
+                <path
+                  d="M11.46875,5c-3.55078,0 -6.46875,2.91406 -6.46875,6.46875v9.0625c0,3.55078 2.91406,6.46875 6.46875,6.46875h9.0625c3.55078,0 6.46875,-2.91406 6.46875,-6.46875v-9.0625c0,-3.55078 -2.91406,-6.46875 -6.46875,-6.46875zM11.46875,7h9.0625c2.47266,0 4.46875,1.99609 4.46875,4.46875v9.0625c0,2.47266 -1.99609,4.46875 -4.46875,4.46875h-9.0625c-2.47266,0 -4.46875,-1.99609 -4.46875,-4.46875v-9.0625c0,-2.47266 1.99609,-4.46875 4.46875,-4.46875zM21.90625,9.1875c-0.50391,0 -0.90625,0.40234 -0.90625,0.90625c0,0.50391 0.40234,0.90625 0.90625,0.90625c0.50391,0 0.90625,-0.40234 0.90625,-0.90625c0,-0.50391 -0.40234,-0.90625 -0.90625,-0.90625zM16,10c-3.30078,0 -6,2.69922 -6,6c0,3.30078 2.69922,6 6,6c3.30078,0 6,-2.69922 6,-6c0,-3.30078 -2.69922,-6 -6,-6zM16,12c2.22266,0 4,1.77734 4,4c0,2.22266 -1.77734,4 -4,4c-2.22266,0 -4,-1.77734 -4,-4c0,-2.22266 1.77734,-4 4,-4z"
+                ></path>
+              </g>
+            </g>
+          </svg>
+        </button>
+        <button
+          class="Link__twitter"
+          onclick="window.open('https://x.com/vasileiosmamak1', '_blank')"
+        >
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            viewBox="0 0 48 48"
+            width="30px"
+            height="30px"
+            class="twitter"
+          >
+            <path
+              d="M42,12.429c-1.323,0.586-2.746,0.977-4.247,1.162c1.526-0.906,2.7-2.351,3.251-4.058c-1.428,0.837-3.01,1.452-4.693,1.776C34.967,9.884,33.05,9,30.926,9c-4.08,0-7.387,3.278-7.387,7.32c0,0.572,0.067,1.129,0.193,1.67c-6.138-0.308-11.582-3.226-15.224-7.654c-0.64,1.082-1,2.349-1,3.686c0,2.541,1.301,4.778,3.285,6.096c-1.211-0.037-2.351-0.374-3.349-0.914c0,0.022,0,0.055,0,0.086c0,3.551,2.547,6.508,5.923,7.181c-0.617,0.169-1.269,0.263-1.941,0.263c-0.477,0-0.942-0.054-1.392-0.135c0.94,2.902,3.667,5.023,6.898,5.086c-2.528,1.96-5.712,3.134-9.174,3.134c-0.598,0-1.183-0.034-1.761-0.104C9.268,36.786,13.152,38,17.321,38c13.585,0,21.017-11.156,21.017-20.834c0-0.317-0.01-0.633-0.025-0.945C39.763,15.197,41.013,13.905,42,12.429"
+            ></path>
+          </svg>
+        </button>
+        <button
+          class="Link__github"
+          onclick="window.open('https://github.com/Vasilis-D', '_blank')"
+        >
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            viewBox="0 0 30 30"
+            width="30px"
+            height="30px"
+            class="github"
+          >
+            <path
+              d="M15,3C8.373,3,3,8.373,3,15c0,5.623,3.872,10.328,9.092,11.63C12.036,26.468,12,26.28,12,26.047v-2.051 c-0.487,0-1.303,0-1.508,0c-0.821,0-1.551-0.353-1.905-1.009c-0.393-0.729-0.461-1.844-1.435-2.526 c-0.289-0.227-0.069-0.486,0.264-0.451c0.615,0.174,1.125,0.596,1.605,1.222c0.478,0.627,0.703,0.769,1.596,0.769 c0.433,0,1.081-0.025,1.691-0.121c0.328-0.833,0.895-1.6,1.588-1.962c-3.996-0.411-5.903-2.399-5.903-5.098 c0-1.162,0.495-2.286,1.336-3.233C9.053,10.647,8.706,8.73,9.435,8c1.798,0,2.885,1.166,3.146,1.481C13.477,9.174,14.461,9,15.495,9 c1.036,0,2.024,0.174,2.922,0.483C18.675,9.17,19.763,8,21.565,8c0.732,0.731,0.381,2.656,0.102,3.594 c0.836,0.945,1.328,2.066,1.328,3.226c0,2.697-1.904,4.684-5.894,5.097C18.199,20.49,19,22.1,19,23.313v2.734 c0,0.104-0.023,0.179-0.035,0.268C23.641,24.676,27,20.236,27,15C27,8.373,21.627,3,15,3z"
+            ></path>
+          </svg>
+        </button>
+        <button
+          class="Link__discord"
+          onclick="window.open('https://discord.com/channels/@me', '_blank')"
+        >
+          <svg
+            height="30px"
+            width="30px"
+            viewBox="0 0 48 48"
+            xmlns="http://www.w3.org/2000/svg"
+            class="discord"
+          >
+            <path
+              d="M40,12c0,0-4.585-3.588-10-4l-0.488,0.976C34.408,10.174,36.654,11.891,39,14c-4.045-2.065-8.039-4-15-4s-10.955,1.935-15,4c2.346-2.109,5.018-4.015,9.488-5.024L18,8c-5.681,0.537-10,4-10,4s-5.121,7.425-6,22c5.162,5.953,13,6,13,6l1.639-2.185C13.857,36.848,10.715,35.121,8,32c3.238,2.45,8.125,5,16,5s12.762-2.55,16-5c-2.715,3.121-5.857,4.848-8.639,5.815L33,40c0,0,7.838-0.047,13-6C45.121,19.425,40,12,40,12z M17.5,30c-1.933,0-3.5-1.791-3.5-4c0-2.209,1.567-4,3.5-4s3.5,1.791,3.5,4C21,28.209,19.433,30,17.5,30z M30.5,30c-1.933,0-3.5-1.791-3.5-4c0-2.209,1.567-4,3.5-4s3.5,1.791,3.5,4C34,28.209,32.433,30,30.5,30z"
+            ></path>
+          </svg>
+        </button>
+      </div>
+    </div>
+
+    <div id="container2">
+      <p>
+        © Designed by
+        <span style="color: rgb(0, 140, 255)">&nbsp;V.Mamakis&nbsp;</span>and
+        developed by
+        <span style="color: rgb(0, 140, 255)">&nbsp;0devmak0&nbsp;</span>.
+      </p>
+      <p id="last-paragraph">Copyrights reserved to both 2024.</p>
+    </div>
+    <!-------------------------------------------------------- End of Social Media buttons ------------------------------------------->
+
+    <!--------------------------------------------------- Scripts ---------------------------------------------------->
+
+    <script type="text/javascript" src="js/jquery-3.7.1.min.js"></script>
+    <script type="text/javascript" src="js/script.js"></script>
+  </body>
+</html>
